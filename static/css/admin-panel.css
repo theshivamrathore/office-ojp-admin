@@ -1,0 +1,12 @@
+#heading,h1{
+  color: white;
+  background-color: blue;
+}
+input{
+  width: 380px;
+  margin: 10px;
+}
+.main{
+  margin-top: 100px;
+  width: 600px;
+}

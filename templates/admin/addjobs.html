@@ -1,0 +1,34 @@
+{% load static%}
+<!DOCTYPE html>
+<html lang="en" dir="ltr">
+  <head>
+    <meta charset="utf-8">
+    <title></title>
+    <link rel="stylesheet" href="{%static 'bootstrap/css/bootstrap.min.css'%}">
+  </head>
+  <body>
+    <div class="container">
+      <form method="post" class="form-control">
+        {% csrf_token %}
+        <select class="form-control" name="select1">
+          <option value="andamannicobar">Andaman nicobar</option>
+          <option value="arunachalpradesh">Arunachal pradesh</option>
+        </select>
+        <label for="">Post Date</label>
+        <input type="text" name="post_date" required>
+        <label for="">Recruitment Board</label>
+        <input type="text" name="recruitment_board" required>
+        <label for="">Post Name</label>
+        <input type="text" name="post_name" required>
+        <label for="">Qualification</label>
+        <input type="text" name="qualification" required>
+        <label for="">Advt No.</label>
+        <input type="text" name="advt_no" required>
+        <label for="">Last Date</label>
+        <input type="text" name="last_date" required>
+        <input type="submit" value="submit">
+      </form>
+
+    </div>
+  </body>
+</html>
